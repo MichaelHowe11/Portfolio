@@ -1,41 +1,71 @@
-/* color theme at https://maketintsandshades.com/#161B45 */
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 
 body {
     background-color: #161B45;
     color: #B9BBC7;
 }
 
-
-.topbar * {
-    height: 5vh;
+.hello {
+    display: flex;
+    width: 100%;
+    font-family: Pacifico;
+    justify-content: center;
+    font-size: 100px;
 }
 
 .topbar {
     display: flex;
+    height: 10vh;
+}
+
+
+
+.topbar .imglink img {
+    height: 8vh;
+    background-color: #161B45;
+    transition: background-color 0.3s linear;
+
+}
+
+.topbar .imglink img:hover {
+    background-color: #45496a;
+    transition: background-color 0.3s linear;
+}
+
+.topbar .imglink {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    height: 10px;
+}
+
+.topbar .links {
+    display: flex;
     width: 60%;
-    justify-content: space-evenly;
-}
-
-.navwrap {
-    display: flex;
-    justify-content: center;
-}
-
-nav {
-    display: flex;
     align-items: center;
-    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
 }
 
-.topbar div a {
+.topbar .links a {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 5vw;
+    background-color: #2d3258;
+    transition: background-color 0.3s linear;
     text-decoration: none;
     font-size: 20px;
     color: #B9BBC7;
     width: 4vw;
     border-radius: 25%;
+    height: 5vh;
+    width: 5vw;
+    align-items: center;
+    justify-content: center;
 }
 
 .topbar div a:hover {
@@ -44,27 +74,4 @@ nav {
     background-color: #45496a;
     transition: background-color 0.3s linear;
 
-}
-
-.links {
-    display: flex;
-    width: 40%;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.links a {
-    background-color: #2d3258;
-    transition: background-color 0.3s linear;
-}
-
-.imglink a {
-    display: flex;
-    background-color: #161B45;
-    transition: background-color 0.3s linear;
-}
-
-.imglink a :hover {
-    background-color: #45496a;
-    transition: background-color 0.3s linear;
 }
