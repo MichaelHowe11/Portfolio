@@ -9,6 +9,8 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 document.addEventListener("DOMContentLoaded", function () {
     let element = document.getElementById("hello")
 
+    // https://stackoverflow.com/a/6121270 used for fadein/fadeout
+
     function fadeout() {
         let op = 1;
         let timer = setInterval(function () {
@@ -62,6 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
     async function delayedGreeting() {
         fadeout()
         await sleep(1500);
+        if (inanimation === true) {
+            await sleep(500)
+        }
         fadein()
     }
     let time = setInterval(() => {
