@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(op)
             inanimation = true
             if (op <= 0.01) {
-                element.style.display = 'none';
+                element.style.visibility = 'hidden';
                 clearInterval(timer);
                 op = 1
             }
@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function fadein() {
         element.style.display = 'flex';
+        element.style.visibility = 'visible';
         langnum++;
         document.getElementById("hello").innerHTML = hellolang[langnum]
         console.log(hellolang.length)
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function delayedGreeting() {
         fadeout()
-        await sleep(1500);
+        await sleep(1200);
         if (inanimation === true) {
             await sleep(500)
         }

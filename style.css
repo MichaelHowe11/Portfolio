@@ -9,8 +9,50 @@ body {
     color: #B9BBC7;
 }
 
+h2 {
+    padding-top: 15vh;
+    display: flex;
+    justify-content: center;
+}
+
+.awesome {
+    display: flex;
+    flex-wrap: wrap;
+    width: 5%;
+}
+
+.project1 a img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #B9BBC7;
+    border-width: 3px;
+}
+
+.project1 p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.project1 h1,
+h2,
+h3,
+p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .hello {
     display: flex;
+    padding-top: 15vh;
     width: 100%;
     font-family: Pacifico;
     justify-content: center;
@@ -22,16 +64,18 @@ body {
     height: 10vh;
 }
 
-
+.navwrap {
+    display: flex;
+    flex-direction: column;
+}
 
 .topbar .imglink img {
     height: 8vh;
     background-color: #161B45;
     transition: background-color 0.3s linear;
-
 }
 
-.topbar .imglink img:hover {
+.topbar .imglink a img:hover {
     background-color: #45496a;
     transition: background-color 0.3s linear;
 }
@@ -49,7 +93,6 @@ body {
     align-items: center;
     justify-content: flex-end;
     align-items: center;
-
 }
 
 .topbar .links a {
@@ -70,8 +113,38 @@ body {
 
 .topbar div a:hover {
     color: #d0d1da;
-
     background-color: #45496a;
     transition: background-color 0.3s linear;
+}
 
+.project1 button {
+    display: flex;
+    background: #B9BBC7;
+    background-size: 1800% 1800%;
+    justify-content: center;
+    transition: background-color 1s linear;
+    align-items: center;
+    margin: 0 auto;
+    width: 5vw;
+    height: 5vh;
+}
+
+.project1 button:hover {
+    background: linear-gradient(1deg, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #e81d1d, #ff2400, #e81d1d, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7);
+    background-size: 1800% 1800%;
+    animation: rainbow 4s ease-in-out;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%;
+    }
+
+    50% {
+        background-position: 100% 19%;
+    }
+
+    100% {
+        background-position: 0% 82%;
+    }
 }
