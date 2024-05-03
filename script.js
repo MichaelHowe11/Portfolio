@@ -19,20 +19,24 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(op)
             inanimation = true
             if (op <= 0.01) {
+                element.style.display = 'none';
                 clearInterval(timer);
                 op = 1
             }
         }, 20);
+        inanimation = false
 
 
 
     }
 
     function fadein() {
-        document.getElementById("hello").innerHTML = hellolang[langnum]
+        element.style.display = 'flex';
         langnum++;
-
-        if (langnum >= hellolang.length) {
+        document.getElementById("hello").innerHTML = hellolang[langnum]
+        console.log(hellolang.length)
+        console.log(langnum)
+        if (langnum >= hellolang.length - 1) {
             langnum = 0;
         }
         let op2 = 0.1;
@@ -56,13 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     async function delayedGreeting() {
-        fadein()
-        await sleep(4000);
         fadeout()
+        await sleep(1500);
+        fadein()
     }
     let time = setInterval(() => {
         delayedGreeting()
-    }, 6000);
+    }, 8000);
 
 
 
