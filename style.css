@@ -132,7 +132,7 @@ p {
 .project1 button:hover {
     background: linear-gradient(1deg, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #e81d1d, #ff2400, #e81d1d, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7);
     background-size: 1800% 1800%;
-    animation: rainbow 4s ease-in-out;
+    animation: rainbow 0.5s ease-in-out;
 }
 
 @keyframes rainbow {
