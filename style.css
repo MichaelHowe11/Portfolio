@@ -122,7 +122,6 @@ p {
     background: #B9BBC7;
     background-size: 1800% 1800%;
     justify-content: center;
-    transition: background-color 1s linear;
     align-items: center;
     margin: 0 auto;
     width: 5vw;
@@ -132,7 +131,7 @@ p {
 .project1 button:hover {
     background: linear-gradient(1deg, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #e81d1d, #ff2400, #e81d1d, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7);
     background-size: 1800% 1800%;
-    animation: rainbow 0.5s ease-in-out;
+    animation: rainbow 1.5s ease-in-out;
 }
 
 @keyframes rainbow {
@@ -147,4 +146,27 @@ p {
     100% {
         background-position: 0% 82%;
     }
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d3258;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #B9BBC7;
+    padding: 10px;
+    border: 1px solid #B9BBC7;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    background-color: #45496a;
+    border-color: #45496a;
 }
