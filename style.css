@@ -7,6 +7,7 @@
 body {
     background-color: #161B45;
     color: #B9BBC7;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -21,7 +22,7 @@ h2 {
     width: 5%;
 }
 
-.project1 a img {
+.proj1 a img {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
@@ -32,7 +33,7 @@ h2 {
     border-width: 3px;
 }
 
-.project1 p {
+.proj1 p {
     display: flex;
     flex-wrap: wrap;
     width: 30%;
@@ -40,7 +41,7 @@ h2 {
     padding: 2%;
 }
 
-.project1 h1,
+.proj1 h1,
 h2,
 h3,
 p {
@@ -117,7 +118,7 @@ p {
     transition: background-color 0.3s linear;
 }
 
-.project1 button {
+.proj1 button {
     display: flex;
     background: #B9BBC7;
     background-size: 1800% 1800%;
@@ -128,11 +129,55 @@ p {
     height: 5vh;
 }
 
-.project1 button:hover {
+.proj1 button:hover {
     background: linear-gradient(1deg, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #e81d1d, #ff2400, #e81d1d, #B9BBC7, #B9BBC7, #B9BBC7, #B9BBC7);
     background-size: 1800% 1800%;
     animation: rainbow 1.5s ease-in-out;
 }
+
+.typeani h3 {
+    color: #B9BBC7;
+    animation: rainbowtext 1s linear;
+}
+
+
+.proj1 .slide {
+    transform: translateX(100%);
+    transition: transform 0.8s ease;
+}
+
+.proj1 .slide:nth-of-type(even) {
+    transform: translateX(-100%);
+}
+
+.proj1 .show {
+    transform: translateX(0);
+    transition: transform 0.8s ease;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
 
 @keyframes rainbow {
     0% {
@@ -140,13 +185,15 @@ p {
     }
 
     50% {
-        background-position: 100% 19%;
+        background-position: 30% 19%;
     }
 
     100% {
         background-position: 0% 82%;
     }
 }
+
+
 
 
 footer {
