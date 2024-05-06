@@ -61,6 +61,14 @@ document.addEventListener("DOMContentLoaded", function () {
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
+    let ms = 0
+    let mst = setInterval(function () {
+        ms++
+        if (ms === 800) {
+            delayedGreeting()
+            clearInterval(mst)
+        }
+    }, 1);
 
     async function delayedGreeting() {
         fadeout()
@@ -70,10 +78,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         fadein()
     }
-    let time = setInterval(() => {
-        delayedGreeting()
-    }, 8000);
 
+    async function delayedGreeting2() {
+        await sleep(1200);
+        let time = setInterval(() => {
+            delayedGreeting()
+        }, 8000);
+    }
+
+    delayedGreeting2()
 
 
 
