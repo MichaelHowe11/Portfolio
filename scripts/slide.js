@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         elements.forEach((slide) => {
             const elementstop = slide.getBoundingClientRect().top;
-            console.log(elementstop);
+            // console.log(elementstop);
 
             if (elementstop < height) {
                 slide.classList.add('show');
