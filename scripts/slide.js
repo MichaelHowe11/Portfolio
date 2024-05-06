@@ -63,13 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
             let htmltext = document.getElementById("typer").innerHTML;
             htmltext = htmltext.slice(0, origtext.length + i - 1) + htmltext.slice(origtext.length + i);
             document.getElementById("typer").innerHTML = htmltext;
-            console.log(htmltext);
+            // console.log(htmltext);
             setTimeout(correction, 50);
         } else if (document.getElementById("typer").innerHTML === origtext) {
             isorig = true
         }
         if (isorig === true) {
-            console.log("bruh")
+            // console.log("bruh")
             if (document.getElementById("typer").innerHTML != text2) {
                 document.getElementById("typer").innerHTML += text2.charAt(i2)
                 setTimeout(correction, 50)
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         i2++
         i--
-        console.log("e");
+        // console.log("e");
     }
 
 
@@ -93,7 +93,16 @@ document.addEventListener("DOMContentLoaded", function () {
         i = 26
         correction();
     }
-
-
+    // nothing to see here
+    let inputkey = "";
+    let isenable = false;
+    document.addEventListener('keypress', function (event) {
+        
+        inputkey+=event.key
+        // console.log(inputkey)
+        if (inputkey.includes("wwssadadbaEnter") && isenable === false){
+            alert("Shoutout to Gianna and RJ. Also to my Mom and Dad :)")
+            isenable = true        }
+    });
 
 });
