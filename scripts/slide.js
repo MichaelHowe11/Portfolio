@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // window.onbeforeunload = function () {
-    //     window.scrollTo(0, 0);
-    // }
+    window.onbeforeunload = function () {
+         window.scrollTo(0, 0);
+     }
     let elements = document.querySelectorAll('.slide')
     // console.log(elements)
     let x = 0;
