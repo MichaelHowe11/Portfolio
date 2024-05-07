@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     window.onbeforeunload = function () {
-         window.scrollTo(0, 0);
-     }
+        window.scrollTo(0, 0);
+    }
     let elements = document.querySelectorAll('.slide')
     // console.log(elements)
     let x = 0;
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (istyping === false) {
                     istyping = true;
                     delayedGreeting();
+                    
                 }
                 slide.classList.add('show');
                 slide.classList.remove('slide');
@@ -97,12 +98,12 @@ document.addEventListener("DOMContentLoaded", function () {
     let inputkey = "";
     let isenable = false;
     document.addEventListener('keypress', function (event) {
-        
-        inputkey+=event.key
-        // console.log(inputkey)
-        if (inputkey.includes("wwssadadbaEnter") && isenable === false){
-            alert("Shoutout to Gianna and RJ. Also to my Mom and Dad :)")
-            isenable = true        }
-    });
 
+        inputkey += event.key
+        // console.log(inputkey)
+        if (inputkey.includes("wwssadadbaEnter") && isenable === false) {
+            alert("Shoutout to Gianna and RJ. Also to my Mom and Dad :)")
+            isenable = true
+        }
+    });
 });
