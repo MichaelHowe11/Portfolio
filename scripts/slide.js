@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let text = document.getElementById("typer").innerHTML + " the awesomest place ever."
 
-    let text2 = document.getElementById("typer").innerHTML + " CART (Center for Advanced Research and Technology)"
+    let text2 = document.getElementById("typer").innerHTML + " The Center for Advanced Research and Technology."
     let origtext = document.getElementById("typer").innerHTML;
     document.getElementById("typer").innerHTML = ""
     let i = 0
