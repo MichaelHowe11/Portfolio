@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=DM+Serif+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan+SC&display=swap');
+
+
+body {
+    font-family: "Aref Ruqaa Ink", serif;
+}
+
+body p {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.aboutwrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.introduction {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20vh;
+    background-image: url("/imgs/projects.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.introcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2d3258;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.introduction h2,
+h1 {
+    margin: 0;
+}
+
+.introduction h1 {
+    font-size: 100px;
+}
+
+.introduction h2,
+p {
+    width: 80%;
+}
+
+.aboutwrapper img {
+    width: 30vw;
+    height: auto;
+    max-height: 30vw;
+}
+
+.thanks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+}
+
+.thanks img {
+    width: 10vw;
+    height: auto;
+}
+
+.thanks p {
+    width: 50%;
+}
+
+footer {
+    width: 100%;
+}
+
+.showc {
+    width: 100%;
+}

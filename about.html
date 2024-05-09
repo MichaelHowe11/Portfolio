@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Howell's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./transparentLogoGrey.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/other.css">
+    <link rel="stylesheet" href="./styles/rainbowborder.css">
+    <script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -24,41 +27,53 @@
         </nav>
     </section>
 
-    <h2>My name is Michael</h2>
-    <p>I attend both CART and Clovis West, I take Web Applications here at CART and take Computer Science A at Clovis
-        West. The purpose of this website was to showcase my skills of both web development and design.</p>
-    <!-- I don't wanna add a gif here yet since the styling/animations aren't really done yet -->
-    <img src="" alt="I will add this later, gif of CSS and JS in action like the hello thing on the front page.">
+    <div class="aboutwrapper">
+        <!-- when hover set opacity to back image to 1 with transition -->
+        <section class="introduction">
+            <div class="introcontainer">
+                <h1>Hi.</h1>
+                <p>My name is Michael. I attend both CART and Clovis West, I take Web Applications here at CART and take
+                    Computer Science A at
+                    Clovis
+                    West. The purpose of this website was to showcase my skills of both web development and design.
+                    Pairing both of these skills together brings you this (hopefully) awesome website.</p>
+            </div>
+        </section>
+        <section class="showc">
+            <p>In order to showcase my skills to there fullest potential I paired my JS skills with my CSS skills to
+                make
+                cool things happen on my website, like for example the "Hello" animation I made that cycles through many
+                different languages.</p>
+            <img src="" alt="img">
+        </section>
 
-    <p>In order to showcase my skills to there fullest potential I paired my JS skills with my CSS skills to make cool
-        things happen on my website, like for example the "Hello" animation I made that cycles through many different
-        languages.</p>
+        <section class="thanks">
+            <p>All of the skills showcased on the website are skills that I've built up over many years of playing
+                around
+                with
+                programming. I love programming and my favorite thing about programming is problem solving. I have been
+                programming since I was in 7th grade and I've been in love ever since.</p>
+            <img src="./imgs/jared.jpg" alt="Mr. Fast Sensei">
+            <p>I want to thank Mr. Fast for providing the environment possible to extend what I thought was possible
+                with my
+                programming.</p>
 
-    <img src="./imgs/projects.png" alt="img of my projects" style="width: 30%;">
+        </section>
 
-    <p>All of the skills showcased on the website are skills that I've built up over many years of playing around with
-        programming. I love programming and my favorite thing about programming is problem solving. I have been
-        programming since I was in 7th grade and I've been in love ever since.</p>
+        <!-- <section class="project1">
+            <button id="am2" onclick="location.href='./hobbies.html'" style="width: ;">Also a Portal Through Time</button>
+        </section> -->
 
-    <img src="./imgs/jared.jpg" alt="Mr. Fast Sensei">
+        <footer>
+            <a href="./resume/resume.pdf">
+                <p>Download my Résumé</p>
+            </a>
 
-    <p>I want to thank Mr. Fast for providing the environment possible to extend what I thought was possible with my
-        programming.</p>
-
-    <section class="project1">
-        <button id="am2" onclick="location.href='./hobbies.html'">Also a Portal Through Time</button>
-    </section>
-
-    <footer>
-        <a href="./resume/resume.pdf">
-            <p>Download my Résumé</p>
-        </a>
-
-        <a href="https://github.com/MichaelHowe11/">
-            <p>Check out my GitHub</p>
-        </a>
-    </footer>
-
+            <a href="https://github.com/MichaelHowe11/">
+                <p>Check out my GitHub</p>
+            </a>
+        </footer>
+    </div>
 </body>
 
 </html>
