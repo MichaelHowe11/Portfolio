@@ -10,6 +10,7 @@ body {
     background-color: #161B45;
     color: #B9BBC7;
     overflow-x: hidden;
+    margin: 0;
 }
 
 h2 {
@@ -55,12 +56,16 @@ p {
 
 .hello {
     display: flex;
-    padding-bottom: 20vh;
     width: 100%;
     font-family: Pacifico;
     justify-content: center;
     font-size: 240px;
-    margin-top: 12vh;
+    margin-bottom: 0;
+    margin-top: 16vh;
+}
+
+.hellowrap {
+    margin-bottom: 50vh;
 }
 
 .topbar {
@@ -73,29 +78,15 @@ p {
     flex-direction: column;
 }
 
-.topbar .imglink img {
-    height: 8vh;
-    background-color: #161B45;
-    transition: background-color 0.3s linear;
-}
-
-.topbar .imglink a img:hover {
-    background-color: #45496a;
-    transition: background-color 0.3s linear;
-}
-
-.topbar .imglink {
-    display: flex;
-    justify-content: flex-end;
-    width: 20%;
-    height: 10px;
+.topbar {
+    background-color: #2d3258;
 }
 
 .topbar .links {
     display: flex;
-    width: 60%;
+    width: 100%;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -103,15 +94,13 @@ p {
     display: flex;
     margin-left: 5vw;
     margin-right: 5vw;
-
-    background-color: #2d3258;
-    transition: background-color 0.3s linear;
+    transition: scale 0.2s linear, background-color 0.25s linear;
     text-decoration: none;
     font-size: 20px;
     color: #B9BBC7;
     border-radius: 25%;
-    height: 5vh;
-    width: 5vw;
+    height: 50px;
+    width: 100px;
     align-items: center;
     justify-content: center;
 }
@@ -121,7 +110,6 @@ p {
     margin: 0 auto;
     width: 55%;
     transition: opacity 1s;
-
     font-size: 50px;
     margin-bottom: 55vh;
 }
@@ -130,7 +118,8 @@ p {
 .topbar div a:hover {
     color: #d0d1da;
     background-color: #45496a;
-    transition: background-color 0.3s linear;
+    scale: 1.1;
+    transition: scale 0.2s linear, background-color 0.25s linear;
 }
 
 
@@ -280,4 +269,9 @@ footer a {
 footer a:hover {
     background-color: #45496a;
     border-color: #45496a;
+}
+
+
+.hover1 {
+    position: absolute;
 }

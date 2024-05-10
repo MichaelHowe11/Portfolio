@@ -89,6 +89,16 @@ document.addEventListener("DOMContentLoaded", function () {
     delayedGreeting2()
 
 
+    const hellox = document.getElementById("hello").getBoundingClientRect().right;
+    console.log(hellox)
+    const helloy = document.getElementById("hello").getBoundingClientRect().top;
 
+    console.log(helloy)
+
+    document.getElementById("hover1").style.transform = "translateX(" + hellox + "px)"
+    console.log(document.getElementById("hover1").style.transform = "translateX(" + hellox + "px)")
+    document.getElementById("hover1").style.transform += ",translateY(-" + helloy + "px)"
+
+    console.log(document.getElementById("hover1").style.transform = "translateY(-" + parseInt(helloy+100) + "px)")
 
 });
