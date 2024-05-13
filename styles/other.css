@@ -34,6 +34,7 @@ body p {
 
 
 .introduction {
+    position: relative;
     width: 90%;
     height: 80vh;
     display: flex;
@@ -41,10 +42,37 @@ body p {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 20vh;
-    background-image: url("/imgs/projects.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin-top: 6vh;
+    border-radius: 100px;
 }
+
+.introduction img {
+    position: absolute;
+    width: 70vw;
+    opacity: 0.7;
+    height: auto;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+    border-radius: 50px;
+
+}
+
+.introduction img:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.opacitylow {
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+}
+
+.opacitynorm {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+
 
 .introcontainer {
     display: flex;
@@ -52,8 +80,9 @@ body p {
     align-items: center;
     flex-direction: column;
     background-color: #2d3258;
-    width: 80%;
+    width: 70%;
     border-radius: 20px;
+    z-index: 1;
 }
 
 .introduction h2,
@@ -70,11 +99,7 @@ p {
     width: 80%;
 }
 
-.aboutwrapper img {
-    width: 30vw;
-    height: auto;
-    max-height: 30vw;
-}
+
 
 .thanks {
     display: flex;
@@ -120,4 +145,3 @@ footer {
         transform: translateY(100px);
     }
 }
-

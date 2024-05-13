@@ -87,4 +87,5 @@ document.addEventListener("DOMContentLoaded", function () {
         i = 26
         correction();
     }
+
 })
