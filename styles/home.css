@@ -54,18 +54,30 @@ p {
     align-items: center;
 }
 
+.hellowrap {
+    margin-bottom: 50vh;
+    text-align: center;
+}
+
 .hello {
-    display: flex;
-    width: 100%;
+    display: inline-block;
     font-family: Pacifico;
-    justify-content: center;
     font-size: 240px;
+    transition: font-size 0.5s ease;
     margin-bottom: 0;
     margin-top: 16vh;
 }
 
-.hellowrap {
-    margin-bottom: 50vh;
+
+.hello:hover {
+    font-size: 280px;
+    transition: font-size 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #B9BBC7;
+
 }
 
 .topbar {
@@ -275,3 +287,6 @@ footer a:hover {
 .hover1 {
     position: absolute;
 }
+
+
+

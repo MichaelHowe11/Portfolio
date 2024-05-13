@@ -23,13 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     delayedGreeting();
                     
                 }
-                slide.classList.add('show');
-                slide.classList.remove('slide');
-
-            } else {
-                slide.classList.remove('show');
-
-                slide.classList.add('slide');
 
             }
         });
@@ -94,16 +87,4 @@ document.addEventListener("DOMContentLoaded", function () {
         i = 26
         correction();
     }
-    // nothing to see here
-    let inputkey = "";
-    let isenable = false;
-    document.addEventListener('keypress', function (event) {
-
-        inputkey += event.key
-        // console.log(inputkey)
-        if (inputkey.includes("wwssadadbaEnter") && isenable === false) {
-            alert("Shoutout to Gianna and RJ. Also to my Mom and Dad :)")
-            isenable = true
-        }
-    });
-});
+})

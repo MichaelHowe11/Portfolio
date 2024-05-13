@@ -1,5 +1,6 @@
 
 let hellolang = ["Hello", "Hola", "你好", "नमस्ते", "Bonjour", "مرحبًا", "Привіт", "Olá"]
+let hayd = ["How are you doing?", "¿Cómo le va?", "你好吗", "आप कैसे हैं?", "Comment allez-vous?", "كيف حالك؟", "Як справи?", "Como vai?"]
 // console.log(hellolang)
 let langnum = 0;
 let inanimation = false;
@@ -87,18 +88,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     delayedGreeting2()
-
-
-    const hellox = document.getElementById("hello").getBoundingClientRect().right;
-    console.log(hellox)
-    const helloy = document.getElementById("hello").getBoundingClientRect().top;
-
-    console.log(helloy)
-
-    document.getElementById("hover1").style.transform = "translateX(" + hellox + "px)"
-    console.log(document.getElementById("hover1").style.transform = "translateX(" + hellox + "px)")
-    document.getElementById("hover1").style.transform += ",translateY(-" + helloy + "px)"
-
-    console.log(document.getElementById("hover1").style.transform = "translateY(-" + parseInt(helloy+100) + "px)")
-
 });

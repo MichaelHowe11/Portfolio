@@ -20,6 +20,17 @@ body p {
     justify-content: center;
 }
 
+.title {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 16vh;
+    margin-bottom: 58vh;
+    font-size: 50px;
+}
 
 
 .introduction {
@@ -90,3 +101,23 @@ footer {
 .showc {
     width: 100%;
 }
+
+#arrow {
+    display: flex;
+    margin-top: 10vh;
+    width: 30%;
+    animation: downup 4s ease-in-out infinite;
+}
+
+@keyframes downup {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(100px);
+    }
+}
+
