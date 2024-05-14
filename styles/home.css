@@ -55,17 +55,24 @@ p {
 }
 
 .hellowrap {
-    margin-bottom: 50vh;
+    margin-bottom: 40vh;
     text-align: center;
+    
+}
+
+.hellowrap button {
+    background-color: #161B45;
+    border: none;
 }
 
 .hello {
     display: inline-block;
+    color: #B9BBC7;
     font-family: Pacifico;
     font-size: 240px;
     transition: font-size 0.5s ease;
-    margin-bottom: 0;
     margin-top: 16vh;
+    padding-bottom: 0;
 }
 
 
@@ -80,15 +87,16 @@ a {
 
 }
 
+p {
+    font-size: 40px;
+}
+
 .topbar {
     display: flex;
     height: 10vh;
 }
 
-.navwrap {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .topbar {
     background-color: #2d3258;
@@ -117,14 +125,23 @@ a {
     justify-content: center;
 }
 
+
 #typer {
     text-align: center;
     margin: 0 auto;
     width: 55%;
-    transition: opacity 1s;
+    height: 100px; /* Set a fixed height */
+    line-height: 100px; /* Set line-height to match the height */
     font-size: 50px;
-    margin-bottom: 55vh;
+    margin-bottom: 60vh;
+    margin-top: 0;
+    padding-top: 0;
+    display: inline-block; /* Set display to inline-block */
 }
+
+
+
+
 
 
 .topbar div a:hover {

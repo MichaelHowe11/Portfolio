@@ -7,4 +7,14 @@ function opac1(num, islow, id) {
         document.getElementById(id).classList.add("opacitynorm")
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+    console.log(document.getElementById("showc").style.height)
+    console.log(document.getElementById("thanks").offsetHeight)
 
+    document.getElementById("showc").style.height = document.getElementById("thanks").offsetHeight + "px";
+    function heightchange(params) {
+        document.getElementById("showc").style.height = document.getElementById("thanks").offsetHeight + "px"
+    }
+    window.addEventListener('resize', heightchange);
+
+})

@@ -9,7 +9,7 @@
     <title>Michael Howell's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./transparentLogoGrey.png">
     <link rel="stylesheet" href="./styles/home.css">
-    <link rel="stylesheet" href="./styles/rainbowborder.css">
+    <link rel="stylesheet" href="./styles/other.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -23,17 +23,21 @@
             <div class="links">
                 <a href="index.html" style="font-weight:bold">Home</a>
                 <a href="about.html">About</a>
-                <a href="resume.html">Résumé</a>
                 <a href="projects.html">Projects</a>
                 <a href="hobbies.html">Hobbies</a>
+                <a href="resume.html">Résumé</a>
             </div>
 
 
         </nav>
-        <section class="hellowrap">
-            <button><h1 id="hello" class="hello">Hello</h1></button>
-        </section>
 
+    </section>
+    <section class="hellowrap">
+        <button onclick="document.getElementById('typer').scrollIntoView({
+            behavior: 'smooth'
+          });">
+            <h1 id="hello" class="hello">Hello</h1>
+        </button>
     </section>
     <h2 class="slide typer" id="typer">My name is Michael, and I am a Web Applications student at</h2>
 
@@ -46,6 +50,10 @@
 
         <a href="https://github.com/MichaelHowe11/">
             <p>Check out my GitHub</p>
+        </a>
+
+        <a href="mailto:jimmy@record7.com">
+            <p>Contact Me</p>
         </a>
     </footer>
 

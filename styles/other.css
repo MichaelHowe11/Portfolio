@@ -1,16 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=DM+Serif+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan+SC&display=swap');
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 
 body {
     font-family: "Aref Ruqaa Ink", serif;
 }
 
 body p {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     font-style: normal;
 }
 
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .aboutwrapper {
     display: flex;
@@ -32,6 +47,61 @@ body p {
     font-size: 50px;
 }
 
+.hobbieswrapper {
+    display: flex;
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.hobbieswrapper h2 {
+    padding-top: 5vh;
+}
+
+.expl {
+    width: 60%;
+}
+
+.hobbieswrapper h3 {
+    font-size: 25px;
+}
+
+.hobbies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2d3258;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 70%;
+    border-radius: 60px;
+}
+
+.hobbies img {
+    width: 30vw;
+    margin-bottom: 5vh;
+}
+
+video {
+    margin: 2%;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showc p {
+    margin-bottom: 4vh;
+}
+
+.showc img {
+    width: 30vw;
+}
 
 .introduction {
     position: relative;
@@ -54,7 +124,6 @@ body p {
     transition: opacity 0.5s ease;
     z-index: 0;
     border-radius: 50px;
-
 }
 
 .introduction img:hover {
@@ -71,8 +140,6 @@ body p {
     opacity: 1;
     transition: opacity 0.5s ease;
 }
-
-
 
 .introcontainer {
     display: flex;
@@ -99,14 +166,20 @@ p {
     width: 80%;
 }
 
-
-
 .thanks {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
-    width: 50%;
+    width: 40%;
+    flex-direction: column;
+    background-color: #2d3258;
+    border-radius: 30px;
+    margin: 2%;
+}
+
+.navwrap {
+    display: flex;
     flex-direction: column;
 }
 
@@ -116,15 +189,40 @@ p {
 }
 
 .thanks p {
-    width: 50%;
+    width: 80%;
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d3258;
+    padding: 20px;
     width: 100%;
 }
 
-.showc {
+footer a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #B9BBC7;
+    height: 3vh;
+    padding-bottom: 25px;
+    border: 1px solid #B9BBC7;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+footer p {
     width: 100%;
+    font-size: 20px;
+}
+
+footer a:hover {
+    background-color: #45496a;
+    border-color: #45496a;
 }
 
 #arrow {
@@ -144,4 +242,32 @@ footer {
     50% {
         transform: translateY(100px);
     }
+}
+
+.showc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 2%;
+    border-radius: 30px;
+    background-color: #2d3258;
+}
+
+.hobbies .slide2 {
+    transform: translateX(64%);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.hobbies .slide2:nth-of-type(even) {
+    transform: translateX(-64%);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.hobbies .show2 {
+    transform: translateX(0);
+    transition: transform 1s ease, opacity 1s ease;
 }
