@@ -36,7 +36,7 @@ body p {
 }
 
 .aboutwrapper section {
-    box-shadow: 0px 0px 25px #73768f;
+    box-shadow: 0px 0px 35px #73768f;
 
 }
 
@@ -83,7 +83,7 @@ body p {
     margin-bottom: 5vh;
     width: 70%;
     border-radius: 60px;
-    box-shadow: 0px 0px 25px #73768f;
+    box-shadow: 0px 0px 35px #73768f;
 }
 
 .hobbies img {
@@ -94,7 +94,7 @@ body p {
 video {
     margin: 2%;
     border-radius: 15px;
-    box-shadow: 0px 0px 25px #73768f;
+    box-shadow: 0px 0px 35px #73768f;
 
 }
 
@@ -102,7 +102,7 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .showc p {
@@ -167,7 +167,8 @@ img {
     width: 70%;
     border-radius: 20px;
     z-index: 1;
-    box-shadow: 0px 0px 25px #73768f;
+    box-shadow: 0px 0px 35px #73768f;
+
 
 }
 
