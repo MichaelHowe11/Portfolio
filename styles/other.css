@@ -33,6 +33,12 @@ body p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    
+}
+
+.aboutwrapper section {
+    box-shadow: 0px 0px 25px #73768f;
+
 }
 
 .title {
@@ -78,6 +84,7 @@ body p {
     margin-bottom: 5vh;
     width: 70%;
     border-radius: 60px;
+    box-shadow: 0px 0px 25px #73768f;
 }
 
 .hobbies img {
@@ -88,12 +95,15 @@ body p {
 video {
     margin: 2%;
     border-radius: 15px;
+    box-shadow: 0px 0px 25px #73768f;
+
 }
 
 .videos {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .showc p {
@@ -105,6 +115,8 @@ video {
 }
 
 .introduction {
+    box-shadow: none;
+
     position: relative;
     width: 90%;
     height: 80vh;
@@ -116,6 +128,12 @@ video {
     margin-top: 6vh;
     border-radius: 100px;
 }
+
+img {
+    border-radius: 30px;
+}
+
+
 
 .introduction img {
     position: absolute;
@@ -184,6 +202,7 @@ p {
 .navwrap {
     display: flex;
     flex-direction: column;
+    box-shadow: none;
 }
 
 .thanks img {
