@@ -33,7 +33,6 @@ body p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
 }
 
 .aboutwrapper section {
@@ -124,7 +123,6 @@ video {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 10vh;
     margin-top: 6vh;
     border-radius: 100px;
 }
@@ -169,6 +167,8 @@ img {
     width: 70%;
     border-radius: 20px;
     z-index: 1;
+    box-shadow: 0px 0px 25px #73768f;
+
 }
 
 .introduction h2,
@@ -294,4 +294,13 @@ footer a:hover {
 .hobbies .show2 {
     transform: translateX(0);
     transition: transform 1s ease, opacity 1s ease;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+
 }

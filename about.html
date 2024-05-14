@@ -29,7 +29,7 @@
 
     <div class="aboutwrapper">
         <!-- when hover set opacity to back image to 1 with transition -->
-        <section class="introduction" style="box-shadow: none;">
+        <div class="introduction">
             <div class="introcontainer" id="introcontainer">
                 <h1>Hi.</h1>
                 <p>My name is Michael. I attend both CART and Clovis West, I take Web Applications here at CART and take
@@ -40,27 +40,33 @@
             </div>
             <img class="img2" src="imgs/projects.png" onmouseover="opac1(0.1, true, 'introcontainer')"
                 onmouseout="opac1(1, false, 'introcontainer')" onclick="window.location = 'projects.html'">
-        </section>
-        <section class="showc" id="showc">
-            <p>In order to showcase my skills to there fullest potential I paired my JS skills with my CSS skills to
-                make
-                cool things happen on my website, like for example the "Hello" animation I made that cycles through many
-                different languages.</p>
-            <img src="imgs/hello.gif" alt="hello gif">
-        </section>
+        </div>
 
-        <section class="thanks" id="thanks">
-            <p>All of the skills showcased on the website are skills that I've built up over many years of playing
-                around
-                with
-                programming. I love programming and my favorite thing about programming is problem solving. I have been
-                programming since I was in 7th grade and I've been in love ever since.</p>
-            <img src="./imgs/jared.jpg" alt="Mr. Fast Sensei">
-            <p>I want to thank Mr. Fast for providing the environment possible to extend what I thought was possible
-                with my
-                programming.</p>
+        <div class="bottom">
+            <section class="showc" id="showc">
+                <p>In order to showcase my skills to there fullest potential I paired my JS skills with my CSS skills to
+                    make
+                    cool things happen on my website, like for example the "Hello" animation I made that cycles through
+                    many
+                    different languages.</p>
+                <img src="imgs/hello.gif" alt="hello gif">
+            </section>
 
-        </section>
+            <section class="thanks" id="thanks">
+                <p>All of the skills showcased on the website are skills that I've built up over many years of playing
+                    around
+                    with
+                    programming. I love programming and my favorite thing about programming is problem solving. I have
+                    been
+                    programming since I was in 7th grade and I've been in love ever since.</p>
+                <img src="./imgs/jared.jpg" alt="Mr. Fast Sensei">
+                <p>I want to thank Mr. Fast for providing the environment possible to extend what I thought was possible
+                    with my
+                    programming.</p>
+
+            </section>
+
+        </div>
 
         <!-- <section class="project1">
             <button id="am2" onclick="location.href='./hobbies.html'" style="width: ;">Also a Portal Through Time</button>
