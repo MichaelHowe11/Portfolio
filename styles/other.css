@@ -236,6 +236,7 @@ footer a {
     transition: all 0.3s ease;
     margin-right: 2vw;
     margin-left: 2vw;
+    width: 10vw;
 }
 
 footer p {
@@ -303,5 +304,56 @@ footer a:hover {
     align-items: center;
     margin-top: 10vh;
     margin-bottom: 5vh;
+
+}
+
+@media only screen and (max-width:1024px) {
+    h2 {}
+
+    .introcontainer {
+        width: 90%;
+        height: 80%;
+    }
+    .introcontainer p {
+        font-size: 15px;
+    }
+    .introduction img {
+        width: 100%;
+    }
+
+    .introduction  {
+        height: 40vh;
+    }
+
+    .showc, .thanks {
+        width: 60%;
+        height: 45vh;
+        margin-bottom: 7vh;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom p {
+        font-size: 17px;
+    }
+
+    .showc img {
+        width: 80%;
+    }
+
+    .thanks img {
+        width: 30%;
+    }
+
+    footer a {
+        width: 20vw;
+    }
+
+    footer a p {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
 
 }
