@@ -292,6 +292,7 @@ footer {
     align-items: center;
     background-color: #2d3258;
     padding: 20px;
+    width: 100%;
 }
 
 footer a {
@@ -317,8 +318,9 @@ footer a:hover {
     #typer {
         font-size: 30px;
     }
+
     .hello {
         margin-bottom: 0;
     }
-  
-  }
+
+}
