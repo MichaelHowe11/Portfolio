@@ -314,31 +314,49 @@ footer a:hover {
     h2 {}
 
     .introcontainer {
-        width: 90%;
-        height: 80%;
+        width: 75%;
+        height: 50vh;
     }
+
     .introcontainer p {
-        font-size: 15px;
+        font-size: 12px;
     }
+
     .introduction img {
-        width: 100%;
+        width: 90%;
+        height: 50vh;
+        object-fit: cover;
+
     }
 
-    .introduction  {
+    .thanks {
+        height: 60vh;
+        width: 70%;
+    }
+
+    .introduction h1 {
+        font-size: 56px;
+        margin-bottom: 0;
+    }
+
+    .introduction {
         height: 40vh;
+        margin-top: 20vh;
     }
 
-    .showc, .thanks {
+    .showc {
         width: 60%;
         height: 45vh;
         margin-bottom: 7vh;
     }
+
     .bottom {
         display: flex;
         flex-direction: column;
     }
+
     .bottom p {
-        font-size: 17px;
+        font-size: 13px;
     }
 
     .showc img {
@@ -356,7 +374,7 @@ footer a:hover {
     footer a p {
         width: 100%;
         text-align: center;
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .hobbieswrapper h3 {
@@ -372,12 +390,13 @@ footer a:hover {
         opacity: 0;
         transition: transform 1s ease, opacity 1s ease;
     }
-    
+
     .hobbies .slide2:nth-of-type(even) {
         transform: translateX(-20%);
         opacity: 0;
         transition: transform 1s ease, opacity 1s ease;
     }
+
     .hobbieswrapper h3 {
         font-size: 16px;
         width: 80%;
@@ -396,8 +415,36 @@ footer a:hover {
         text-align: center;
     }
 
-    h1 {
-
+    .title {
+        text-align: center;
     }
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .topbar .links a {
+        font-size: 3vw
+    }
+
+    .topbar .links a {
+        width: 10vw;
+    }
+
+    body {
+        position: auto;
+        min-width: 100vw;
+    }
+
+    footer a {
+        width: 10vw;
+    }
+    
+    footer a p {
+        font-size: 10px;
+    }
+
 
 }
