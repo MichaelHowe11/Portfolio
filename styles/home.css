@@ -59,6 +59,9 @@ p {
 .hellowrap {
     margin-bottom: 40vh;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -95,25 +98,34 @@ p {
 }
 
 .topbar {
+    position: fixed;
+    width: 100%;
     display: flex;
-    height: 10vh;
-    z-index: 1;
+    height: 8vh;
+    z-index: 2;
     box-shadow: 0px 0px 25px #73768f;
     align-items: center;
-    background-color: #2d3258;
-
+    justify-content: center;
+    background-color: rgba(45, 50, 88, 0.5);
+    opacity: 1;
 }
 
 
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .topbar .links {
-    display: flex;
+    opacity: 1;
     width: 100%;
-    align-items: center;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .topbar .links a {
     display: flex;
@@ -133,13 +145,12 @@ p {
 }
 
 
-
 .topbar div a:hover {
     box-shadow: 5px 8px 9px -1px #000000;
 
     color: #d0d1da;
     background-color: #45496a;
-    scale: 1.1;
+    scale: 1.02;
     transition: scale 0.2s ease, background-color 0.25s ease, box-shadow 0.2s ease;
 }
 
@@ -316,11 +327,21 @@ footer a:hover {
 
 @media only screen and (max-width:1024px) {
     #typer {
-        font-size: 30px;
+        font-size: 20px;
+        line-height: 40px;
+        margin-top: 0;
+    }
+    .hellowrap {
+        margin-bottom: 5vh;
     }
 
     .hello {
         margin-bottom: 0;
+        font-size: 30vw;
+    }
+
+    .topbar .links a {
+        font-size: 3vw
     }
 
 }

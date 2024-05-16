@@ -116,14 +116,13 @@ video {
 .introduction {
     box-shadow: none;
 
-    position: relative;
     width: 90%;
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 6vh;
+    margin-top: 12vh;
     border-radius: 100px;
 }
 
@@ -296,6 +295,10 @@ footer a:hover {
 .hobbies .show2 {
     transform: translateX(0);
     transition: transform 1s ease, opacity 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .bottom {
@@ -307,7 +310,7 @@ footer a:hover {
 
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:800px) {
     h2 {}
 
     .introcontainer {
@@ -354,6 +357,47 @@ footer a:hover {
         width: 100%;
         text-align: center;
         font-size: 18px;
+    }
+
+    .hobbieswrapper h3 {
+        font-size: 20px;
+    }
+
+    .hobbies img {
+        width: 50vw;
+    }
+
+    .hobbies .slide2 {
+        transform: translateX(20%);
+        opacity: 0;
+        transition: transform 1s ease, opacity 1s ease;
+    }
+    
+    .hobbies .slide2:nth-of-type(even) {
+        transform: translateX(-20%);
+        opacity: 0;
+        transition: transform 1s ease, opacity 1s ease;
+    }
+    .hobbieswrapper h3 {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    body p {
+        font-size: 3vw;
+    }
+
+    .expl {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    h1 {
+
     }
 
 }

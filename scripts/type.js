@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     async function delayedGreeting() {
+        await sleep(100);
         typing();
         await sleep(6500);
         i = 26
