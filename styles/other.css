@@ -366,7 +366,10 @@ footer a:hover {
     .thanks img {
         width: 30%;
     }
-
+    .introduction h2, p {
+        width: 80vw;
+        text-align: left;
+    }
 
 
     footer a p {
@@ -375,12 +378,21 @@ footer a:hover {
         font-size: 12px;
     }
 
+    .proj1 {
+        margin-bottom: 18vh;
+    }
+
     .hobbieswrapper h3 {
         font-size: 20px;
     }
 
     .hobbies img {
-        width: 50vw;
+        width: 70vw;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
     }
 
     .hobbies .slide2 {
@@ -421,6 +433,12 @@ footer a:hover {
         text-align: center;
     }
 
+    .videos {
+        display: flex;
+        flex-direction: column;
+        width: 215vw;
+    }
+
     html,
     body {
         max-width: 100%;
@@ -459,5 +477,10 @@ footer a:hover {
 
     .proj1 p {
         font-size: 4vw;
+    }
+
+    .hobbies {
+        width: 90%;
+        margin-bottom: 0;
     }
 }
