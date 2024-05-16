@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let istyping = false;
 
     window.addEventListener('scroll', scrollfunc)
+    window.addEventListener('touchmove', scrollfunc)
+
     scrollfunc()
     function scrollfunc() {
         const height = (window.innerHeight / 5 * 3.5);
