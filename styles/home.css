@@ -330,18 +330,46 @@ footer a:hover {
         font-size: 20px;
         line-height: 40px;
         margin-top: 0;
+        transform: translateX(5vw);
     }
+
     .hellowrap {
         margin-bottom: 5vh;
     }
 
     .hello {
         margin-bottom: 0;
-        font-size: 30vw;
+        font-size: 25vw;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(5vw);
+
     }
 
     .topbar .links a {
         font-size: 3vw
+    }
+
+    .hello:hover {
+        font-size: 30vw;
+        transition: font-size 0.5s ease;
+    }
+
+    .topbar .links a {
+        width: 10vw;
+    }
+
+    body {
+        position: auto;
+        min-width: 100vw;
+    }
+
+    footer a {
+        width: 10vw;
+    }
+    
+    footer a p {
+        font-size: 10px;
     }
 
 }
