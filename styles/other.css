@@ -367,9 +367,7 @@ footer a:hover {
         width: 30%;
     }
 
-    footer a {
-        width: 20vw;
-    }
+
 
     footer a p {
         width: 100%;
@@ -400,6 +398,10 @@ footer a:hover {
     .hobbieswrapper h3 {
         font-size: 16px;
         width: 80%;
+    }
+
+    .title p {
+        font-size: 4vw;
     }
 
     body p {
@@ -439,12 +441,23 @@ footer a:hover {
     }
 
     footer a {
-        width: 10vw;
+        width: 20vw;
+        height: 2vh;
     }
-    
+
     footer a p {
         font-size: 10px;
     }
 
+    .title {
+        margin-bottom: 20vh;
+    }
 
+    #arrow {
+        width: 60%;
+    }
+
+    .proj1 p {
+        font-size: 4vw;
+    }
 }

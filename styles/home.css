@@ -68,7 +68,20 @@ p {
 .hellowrap button {
     background-color: #161B45;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
 }
+
+#hello {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 
 .hello {
     display: inline-block;
@@ -79,6 +92,7 @@ p {
     margin-top: 16vh;
     padding-bottom: 0;
     text-shadow: 0px 0px 25px #73768f;
+    text-align: center;
 }
 
 
@@ -330,7 +344,6 @@ footer a:hover {
         font-size: 20px;
         line-height: 40px;
         margin-top: 0;
-        transform: translateX(5vw);
     }
 
     .hellowrap {
@@ -342,7 +355,6 @@ footer a:hover {
         font-size: 25vw;
         justify-content: center;
         align-items: center;
-        transform: translateX(5vw);
 
     }
 
@@ -364,12 +376,28 @@ footer a:hover {
         min-width: 100vw;
     }
 
-    footer a {
-        width: 10vw;
+    footer {
+        transform: translateX(-3vw);
     }
-    
+
+    footer a {
+        width: 20vw;
+        padding-bottom: 0;
+
+    }
+
     footer a p {
         font-size: 10px;
     }
+
+    .proj1 p {
+        width: 80%;
+    }
+
+    .proj1 a img {
+        width: 80%;
+    }
+
+
 
 }
