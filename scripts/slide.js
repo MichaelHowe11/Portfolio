@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-
+    console.log("e")
 
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
@@ -10,14 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let x = 0;
     let istyping = false;
 
-    window.addEventListener('scroll', scrollfunc)
-    scrollfunc()
     function scrollfunc() {
         const height = (window.innerHeight / 5 * 3.5);
+        console.log(height)
 
         elements.forEach((slide) => {
             const elementstop = slide.getBoundingClientRect().top;
-
+            console.log(elementstop)
             if (elementstop < height) {
                 slide.classList.add('show');
                 slide.classList.remove('slide');
@@ -31,5 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     }
+    window.addEventListener('scroll', scrollfunc)
+    window.addEventListener('touchmove', scrollfunc)
+
+
+
 
 })
