@@ -345,6 +345,16 @@ footer a:hover {
         padding: 20px;
     }
 
+    .hellowrap {
+        margin-bottom: 5vh;
+    }
+
+    #typer {
+        font-size: 30px;
+        line-height:normal;
+        width: 90%;
+    }
+
     .img2 {
         width: 100%;
         height: auto;
@@ -362,6 +372,10 @@ footer a:hover {
 
     .topbar .links a {
         width: 10vw;
+    }
+
+    .hello {
+        font-size: 25vw;
     }
 
     body {
