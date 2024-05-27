@@ -340,26 +340,19 @@ footer a:hover {
 }
 
 @media only screen and (max-width:1024px) {
-    #typer {
-        font-size: 20px;
-        line-height: 40px;
-        margin-top: 0;
+    .introcontainer {
+        position: relative;
+        padding: 20px;
     }
 
-    .hellowrap {
-        margin-bottom: 5vh;
-    }
-
-    .hello {
-        margin-bottom: 0;
-        font-size: 25vw;
-        justify-content: center;
-        align-items: center;
-
+    .img2 {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
     }
 
     .topbar .links a {
-        font-size: 3vw
+        font-size: 3vw;
     }
 
     .hello:hover {
@@ -372,7 +365,7 @@ footer a:hover {
     }
 
     body {
-        position: auto;
+        position: relative;
         min-width: 100vw;
     }
 
@@ -383,7 +376,6 @@ footer a:hover {
     footer a {
         width: 20vw;
         padding-bottom: 0;
-
     }
 
     footer a p {
@@ -395,9 +387,6 @@ footer a:hover {
     }
 
     .proj1 a img {
-        width: 80%;
+        width: 90%;
     }
-
-
-
 }

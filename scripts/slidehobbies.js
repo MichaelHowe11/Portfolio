@@ -9,9 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // console.log(elements)
     let x = 0;
     let istyping = false;
-
-    window.addEventListener('scroll', scrollfunc)
     window.addEventListener('touchmove', scrollfunc)
+    window.addEventListener('scroll', scrollfunc)
 
     scrollfunc()
     function scrollfunc() {
