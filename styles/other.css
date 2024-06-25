@@ -98,6 +98,7 @@ body p {
 
 video {
     margin: 2%;
+    width: 30%;
     border-radius: 15px;
     box-shadow: 0px 0px 35px #73768f;
 }
