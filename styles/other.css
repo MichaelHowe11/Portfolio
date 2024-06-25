@@ -132,19 +132,38 @@ img {
     border-radius: 30px;
 }
 
-.introduction img {
+.introduction {
+
+    position: relative;
+    /* Ensure the container is positioned relative to the viewport */
+    width: 90%;
+    height: 80vh;
+    /* Adjust this height as needed */
+    overflow: hidden;
+    /* Ensure no overflow issues */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vh;
+    border-radius: 100px;
+}
+
+.introduction img.img2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     position: absolute;
-    width: 70vw;
+    top: 0;
+    left: 0;
+    width: 100%;
     opacity: 0.7;
-    height: auto;
     transition: opacity 0.5s ease;
     z-index: 0;
     border-radius: 50px;
 }
 
-.introduction img:hover {
+.introduction img.img2:hover {
     opacity: 1;
-    transition: opacity 0.5s ease;
 }
 
 .opacitylow {
@@ -305,7 +324,7 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
 }
 
 .button {
@@ -331,7 +350,7 @@ footer a:hover {
 
     .introcontainer {
         width: 65%;
-        height: 40vh;
+        height: 30vh;
         position: relative;
         padding: 20px;
     }
@@ -342,11 +361,11 @@ footer a:hover {
     }
 
 
-    .introduction img {
-        width: 90%;
-        height: 55vh;
+    .introduction img {        height: 55vh;
         object-fit: cover;
     }
+
+
 
     .thanks {
         height: 74vh;
@@ -360,7 +379,7 @@ footer a:hover {
 
     .introduction {
         height: 40vh;
-        margin-top: 20vh;
+        width: 90%;
     }
 
     .showc {
@@ -372,6 +391,7 @@ footer a:hover {
     .bottom {
         display: flex;
         flex-direction: column;
+        margin-top: 0;
     }
 
     .bottom p {
