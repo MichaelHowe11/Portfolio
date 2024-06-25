@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     }
-    window.addEventListener('scroll', scrollfunc)
+    window.addEventListener('wheel', scrollfunc)
     window.addEventListener('touchmove', scrollfunc)
 
 
