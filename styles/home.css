@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-body {
+html, body {
     background-color: #161B45;
     color: #B9BBC7;
     overflow-x: hidden;
@@ -317,7 +317,8 @@ footer {
     align-items: center;
     background-color: #2d3258;
     padding: 20px;
-    width: 100%;
+    width: 100vw; /* Ensure it takes the full width of the viewport */
+    margin: 0; /* Remove any default margins */
 }
 
 footer a {
@@ -327,6 +328,7 @@ footer a {
     border: 1px solid #B9BBC7;
     border-radius: 5px;
     transition: all 0.3s ease;
+    margin: 0 10px; /* Adjust the margin for spacing */
 }
 
 footer a:hover {
@@ -340,6 +342,11 @@ footer a:hover {
 }
 
 @media only screen and (max-width:1024px) {
+    .topbar .links a{
+        margin-right: 1vw;
+        margin-left: 1vw;
+        width: 40vw;
+    }
     .introcontainer {
         position: relative;
         padding: 20px;
@@ -361,17 +368,10 @@ footer a:hover {
         margin-top: 20px;
     }
 
-    .topbar .links a {
-        font-size: 3vw;
-    }
 
     .hello:hover {
         font-size: 30vw;
         transition: font-size 0.5s ease;
-    }
-
-    .topbar .links a {
-        width: 10vw;
     }
 
     .hello {
@@ -383,9 +383,6 @@ footer a:hover {
         min-width: 100vw;
     }
 
-    footer {
-        transform: translateX(-3vw);
-    }
 
     footer a {
         width: 20vw;
