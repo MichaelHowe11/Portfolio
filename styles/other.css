@@ -96,6 +96,61 @@ body p {
     margin-bottom: 5vh;
 }
 
+
+.main-content {
+    margin-top: 10vh;
+}
+
+.main-content h2 {
+    padding: 0;
+}
+
+.main-content label {
+    font-size: 3vw;
+}
+
+.main-content form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-wrap: wrap;
+}
+
+.main-content form p {
+    width: 100%;
+}
+
+.main-content form p label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.main-content form p button {
+    width: 12vw;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: #2d3258;
+    color: #B9BBC7;
+    font-size: 40px;
+    font-family: "Aref Ruqaa Ink", serif;
+}
+
+.main-content form p label .other {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 4vh;
+    font-size: 20px;
+}
+.message {
+    font-size: 20px;
+    height: 10vh;
+    display: flex;
+    align-items: start;
+}
+
 video {
     margin: 2%;
     width: 30%;
@@ -356,13 +411,19 @@ footer a:hover {
         padding: 20px;
     }
 
+    .main-content form p button {
+        width: 20vw;
+        font-size: 5vw;
+    }
+
     .introcontainer p {
         height: 100%;
         width: 90%;
     }
 
 
-    .introduction img {        height: 55vh;
+    .introduction img {
+        height: 55vh;
         object-fit: cover;
     }
 

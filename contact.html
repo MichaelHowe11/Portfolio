@@ -3,45 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <script src="./scripts/type.js"></script>
-    <script src="./scripts/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Howell's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./transparentLogoGrey.png">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/other.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <script src="./scripts/fade.js"></script>
-    <script src="./scripts/buttonsize.js"></script>
 </head>
 
 <body>
     <section class="navwrap">
         <nav class="topbar">
             <div class="links">
-                <a href="index.html" style="font-weight:bold">Home</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="projects.html">Projects</a>
                 <a href="hobbies.html">Hobbies</a>
-                <a href="contact.html">Contact Me</a>
+                <a href="contact.html" style="font-weight:bold">Contact Me</a>
             </div>
         </nav>
     </section>
 
-    <section class="hellowrap">
-        <button onclick="document.getElementById('typer').scrollIntoView({ behavior: 'smooth' });">
-            <h1 id="hello" class="hello">Hello</h1>
-        </button>
-    </section>
-
-    <h2 class="slide typer" id="typer">My name is Michael, and I am a Web Applications student at</h2>
+    <div class="main-content">
+        <h2>Complete the form below to contact me! All forms will be sent directly to me. You can also click the contact me button at the bottom for my email.</h2>
+        <form name="contact" netlify>
+            <p>
+                <label>Name <input class="other" type="text" name="name" /></label>
+            </p>
+            <p>
+                <label>Message <input class="message" type="text" name="message" /></label>
+            </p>
+            <p>
+                <label>Email <input class="other" type="email" name="email" /></label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+    </div>
     <div class="aboutwrapper">
         <footer>
+
             <a href="https://github.com/MichaelHowe11/">
                 <p>Check out my GitHub</p>
             </a>
+
             <a href="mailto:jimmy@record7.com">
                 <p>Contact Me</p>
             </a>
