@@ -97,6 +97,8 @@ body p {
 }
 
 
+
+
 .main-content {
     margin-top: 10vh;
 }
@@ -127,12 +129,23 @@ body p {
     text-align: center;
 }
 .main-content form p button {
-    width: 12vw;
+    width: 8vw;
     height: 6vh;
     border-radius: 10px;
     background-color: #2d3258;
     color: #B9BBC7;
     font-size: 40px;
+    box-shadow: none;
+    scale: 1;
+    transition: scale 0.2s ease, background-color 0.25s ease, box-shadow 0.2s ease;
+}
+
+/*  bruh shee */
+.main-content form p button:hover {
+    box-shadow: 0px 0px 15px 1px #000000;
+    background-color: #3c4374;
+    scale: 1.15;
+    transition: scale 0.2s ease, background-color 0.25s ease, box-shadow 0.2s ease;
 }
 
 .main-content form p label .other {
