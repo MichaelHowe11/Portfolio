@@ -8,7 +8,6 @@
     <link rel="icon" type="image/x-icon" href="./transparentLogoGrey.png">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/other.css">
-    <script src="./scripts/copytoclip.js"></script>
 </head>
 
 <body>
@@ -19,19 +18,27 @@
                 <a href="about.html">About</a>
                 <a href="projects.html">Projects</a>
                 <a href="hobbies.html">Hobbies</a>
-                <a href="contact.html" style="font-weight:bold">Contact</a>
+                <a href="contact.html">Contact Me</a>
             </div>
         </nav>
     </section>
 
     <div class="main-content">
-        <h2>Here are all the awesome ways to contact me! I'm looking forward to talking with you.</h2>
-        <h3>Email</h3>
-        <a id="emailButton" href="#">My Email: jimmy@record7.com</a>
-        <h3>LinkedIn</h3>
-        <a href="https://www.linkedin.com/in/michaeljjh/">My LinkedIn Page</a>
-        <h3>Please Contact me through email or my linkedin if you need my phone number, thank you!</h3>
-        <span id="emailcopied">My email has been copied to your clipboard!</span>
+        <h2>Complete the form below to contact me! All forms will be sent directly to me. You can also click the contact me button at the bottom for my email.</h2>
+        <form name="contact2" netlify>
+            <p>
+                <label>Name <input class="other" type="text" name="name" /></label>
+            </p>
+            <p>
+                <label>Message <textarea input class="message" type="text" name="message"></textarea></label>
+            </p>
+            <p>
+                <label>Email <input class="other" type="email" name="email" /></label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
     </div>
     <div class="aboutwrapper">
         <footer>
